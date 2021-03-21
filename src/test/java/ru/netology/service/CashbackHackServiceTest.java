@@ -29,14 +29,15 @@ class CashbackHackServiceTest {
         assertEquals(actualResult, expectedResult);
 
     }
-
-}@Test
-public void showEqualBoundary(){
+    @Test
+    public void showEqualBoundary(){
     int purchaseAmount = 1000;
     int actualResult = service.remain(purchaseAmount);
     int expectedResult = 1000;
     assertEquals(actualResult, expectedResult);
 
 }
+
+
 
 }
