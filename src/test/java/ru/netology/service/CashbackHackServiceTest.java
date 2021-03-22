@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-class CashbackHackServiceTest {
+public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
     @Test
    public void showBelowBoundary(){
@@ -22,7 +22,7 @@ class CashbackHackServiceTest {
         assertEquals(actualResult, expectedResult);
 
     }@Test
-    public void showNallBoundary(){
+    public void showNullBoundary(){
         int purchaseAmount = 0;
         int actualResult = service.remain(purchaseAmount);
         int expectedResult = 1000;
